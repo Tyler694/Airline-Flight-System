@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -63,13 +62,10 @@ public class Main {
         }
         return false;
     }
-    private static int check_price_of_flight(String[] arr,String flightname, int[] Prices) {
-        int i = 0;
-        int price = 0;
-        for (String element : arr) {
-            i = Arrays.asList(arr).indexOf(flightname);
-            break;
-        }
+    private static int check_price_of_flight(String[] arr,String flight_name, int[] Prices) {
+        int i;
+        i = Arrays.asList(arr).indexOf(flight_name);
+
         return Prices[i];
     }
 }
